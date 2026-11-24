@@ -10,7 +10,7 @@ export default function EventDetail() {
 
   useEffect(() => {
     setLoading(true);
-    axios.get(`http://127.0.0.1:8000/api/events/${slug}/`)
+    axios.get(`https://where-is-my-event.onrender.com/api/events/${slug}/`)
       .then(res => {
         setEvent(res.data);
         setLoading(false);

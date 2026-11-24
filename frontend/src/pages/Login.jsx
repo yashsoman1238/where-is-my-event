@@ -15,7 +15,7 @@ export default function Login() {
     setLoading(true);
 
     // Authenticate with Django REST SQL Endpoint
-    axios.post('http://127.0.0.1:8000/api/login/', { email, password })
+    axios.post('https://where-is-my-event.onrender.com/api/login/', { email, password })
       .then((res) => {
         setLoading(false);
         const { email: userEmail, role, name, orgName } = res.data;

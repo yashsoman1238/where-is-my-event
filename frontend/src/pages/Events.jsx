@@ -8,7 +8,7 @@ export default function Events() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/events/')
+    axios.get('https://where-is-my-event.onrender.com/api/events/')
       .then(res => {
         setEvents(res.data);
         setLoading(false);

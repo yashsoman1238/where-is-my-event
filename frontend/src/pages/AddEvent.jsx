@@ -70,7 +70,7 @@ export default function AddEvent() {
       organizer_name: activeOrgName.trim()
     };
 
-    axios.post('http://127.0.0.1:8000/api/events/', eventPayload)
+    axios.post('https://where-is-my-event.onrender.com/api/events/', eventPayload)
       .then((res) => {
         alert(`Event "${res.data.title}" successfully published under ${activeOrgName}!`);
         navigate('/organizer-profile');

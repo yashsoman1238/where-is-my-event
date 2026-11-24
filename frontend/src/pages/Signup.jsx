@@ -36,7 +36,7 @@ export default function Signup() {
     setLoading(true);
 
     // POST directly to Django REST SQL Endpoint
-    axios.post('http://127.0.0.1:8000/api/signup/', formData)
+    axios.post('https://where-is-my-event.onrender.com/api/signup/', formData)
       .then((res) => {
         setLoading(false);
         // Persist session locally
